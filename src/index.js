@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
+import App from './App';
 //import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
 
-  React.createElement("ul", null,
-    React.createElement("li", null, "Monday"),
-    React.createElement("li", null, "Friday"),
-    React.createElement("li", null, "Sunday")),
+  <App/>,
   document.getElementById('root')
 );
 
