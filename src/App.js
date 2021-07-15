@@ -1,9 +1,10 @@
 import './App.css';
+import book_library from './images/book_library.png';
 
 function Header(props){
     return(
         <header>
-            <h1>{props.who} book store</h1>
+            <h1>{props.who} books library</h1>
         </header>
     );
 }
@@ -12,8 +13,13 @@ function Body(props){
     return(
         <section>
             <h2>
-                <p>We sell {props.what} books.</p>
-                <p style={{textAlign : "left"}}>In stock:     </p>
+                <p>We have {props.what} books for readers</p>
+                <img
+                     src = {book_library}
+                     height = "300"
+                     alt = "A library book shelves"
+                     />
+                <p style={{textAlign : "left"}}>Books in shelves:</p>
                 <ul style={{textAlign : "left"}}>
                     {
                         props.books_in_stock.map((book) => <li key={book.id}>{book.title}</li>)
