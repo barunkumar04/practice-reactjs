@@ -4,7 +4,7 @@ import book_library from './images/book_library.png';
 function Header(props){
     return(
         <header>
-            <h1>{props.who} books library</h1>
+            <h1>{props.who} book library</h1>
         </header>
     );
 }
