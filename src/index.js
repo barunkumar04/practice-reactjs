@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import App2 from './App2';
+import App3 from './App3';
 //import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.Fragment>
       <App/>
       <App2/>
+      <App3 isUser = {false}/>
   </React.Fragment>,
   document.getElementById('root')
 );
