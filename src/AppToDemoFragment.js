@@ -5,12 +5,12 @@ function Feedback(){
     );
 }
 
-function App2() {
+function AppToDemoFragment() {
   return (
-    <div className="App2">
+    <div className="AppToDemoFragment">
      <Feedback/>
     </div>
   );
 }
 
-export default App2;
+export default AppToDemoFragment;

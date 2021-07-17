@@ -13,7 +13,7 @@ function Body(props){
     return(
         <section>
             <h2>
-                <p>We have {props.what} books for readers</p>
+                <p>Readers, we have {props.what} books</p>
                 <img
                      src = {book_library}
                      height = "300"

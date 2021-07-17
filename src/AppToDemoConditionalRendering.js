@@ -10,18 +10,17 @@ function UserHourSpent(){
 function AllUserHourSpent(){
     return (
     <>
-        <h5>Users spent 600+ hours to read fictional books.</h5>
-        <h5>Users spent 1300+ hours to read non-fictional books.</h5>
+        <h5>Readers spent 600+ hours to read fictional books and 1300+ hours to read non-functional books</h5>
     </>
     );
 }
 
-function App3(props) {
+function AppToDemoConditionalRendering(props) {
   return (
    <>
-    {props.isUser?<UserHourSpent/> : <AllUserHourSpent/>};
+    {props.isAdmin?<AllUserHourSpent/> : <UserHourSpent/>}
    </>
   );
 }
 
-export default App3;
+export default AppToDemoConditionalRendering;
