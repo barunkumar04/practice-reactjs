@@ -5,6 +5,7 @@ import App from './App';
 import AppToDemoFragment from './AppToDemoFragment';
 import AppToDemoConditionalRendering from './AppToDemoConditionalRendering';
 import AppToDemoUseStateAndUseEffect from './AppToDemoUseStateAndUseEffect';
+import AppToDemoUseReducer from './AppToDemoUseReducer';
 //import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
       <AppToDemoFragment/>
       <AppToDemoConditionalRendering isAdmin = {true}/>
       <AppToDemoUseStateAndUseEffect isAdmin = {true}/>
+      <AppToDemoUseReducer isAdmin = {true}/>
   </React.Fragment>,
   document.getElementById('root')
 );
