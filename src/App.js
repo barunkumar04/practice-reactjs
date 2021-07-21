@@ -1,5 +1,8 @@
 import './App.css';
 import book_library from './images/book_library.png';
+import {Routes, Route} from "react-router-dom";
+import {About, Contact} from "./pages";
+import {Link} from "react-router-dom";
 
 function Header(props){
     return(
@@ -41,14 +44,31 @@ function Footer(props){
     );
 }
 
+function Home(){
+     return (
+        <div className="App">
+         <Header who="Barun's"/>
+         <Body what="Fictional and Non-fictional" books_in_stock={bookObjects}/>
+         <Footer since= {new Date().getFullYear()}/>
+         <nav>
+            <Link to="about">About</Link>
+         </nav>
+        </div>
+      );
+}
+
 function App() {
-  return (
-    <div className="App">
-     <Header who="Barun's"/>
-     <Body what="Fictional and Non-fictional" books_in_stock={bookObjects}/>
-     <Footer since= {new Date().getFullYear()}/>
-    </div>
-  );
+
+    return (
+        <div>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={ <About /> } />
+                <Route path="/contact" element={ <Contact />} />
+            </Routes>
+        </div>
+    );
+
 }
 
 // Creating a list of books

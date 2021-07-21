@@ -7,11 +7,14 @@ import AppToDemoConditionalRendering from './AppToDemoConditionalRendering';
 import AppToDemoUseStateAndUseEffect from './AppToDemoUseStateAndUseEffect';
 import AppToDemoUseReducer from './AppToDemoUseReducer';
 import AppToDemoDataLoadUsingUseEffectAndUseState from './AppToDemoDataLoadUsingUseEffectAndUseState';
+import {BrowserRouter as Router} from "react-router-dom";
 //import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.Fragment>
-      <App/>
+      <Router>
+        <App/>
+      </Router>
       <AppToDemoFragment/>
       <AppToDemoConditionalRendering isAdmin = {true}/>
       <AppToDemoUseStateAndUseEffect isAdmin = {true}/>
