@@ -16,7 +16,7 @@ ReactDOM.render(
       <AppToDemoConditionalRendering isAdmin = {true}/>
       <AppToDemoUseStateAndUseEffect isAdmin = {true}/>
       <AppToDemoUseReducer isAdmin = {true}/>
-      <AppToDemoDataLoadUsingUseEffectAndUseState login = {"barunkumar04"}/>
+      <AppToDemoDataLoadUsingUseEffectAndUseState login={"barunkumar04"} isAdmin={true}/>
   </React.Fragment>,
   document.getElementById('root')
 );
